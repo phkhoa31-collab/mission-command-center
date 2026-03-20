@@ -13,6 +13,8 @@ import AITeam from "@/pages/AITeam";
 import Contacts from "@/pages/Contacts";
 import SettingsPage from "@/pages/SettingsPage";
 import NotFound from "@/pages/NotFound";
+import Skills from '@/pages/Skills';
+
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,7 @@ const App = () => (
             <Route path="/ai-team" element={<AITeam />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/skills" element={<Skills />}/>
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
